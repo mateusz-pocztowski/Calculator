@@ -79,6 +79,8 @@ class Calculator {
       this.result.value = 1 / this.result.value;
     }
 
+    else if(this.operator === 'percent') this.result.value = (this.currentResult * this.value) / 100;
+
     else {
 
       if(this.operator === 'equal' && this.newNumber && this.lastOperator !== null && this.lastOperator !== 'equal'){
@@ -90,7 +92,7 @@ class Calculator {
         
         this.currentResult = Calculations.doMath(this.currentResult, this.value, this.lastOperator);
         this.currentResult = (parseFloat(this.currentResult.toPrecision(14)));
-
+        
         this.result.value = this.currentResult;
         this.subRes.value = this.calculations.join(' ');
 
