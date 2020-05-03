@@ -79,7 +79,7 @@ class Calculator {
       this.result.value = 1 / this.result.value;
     }
 
-    else if(this.operator === 'percent') this.result.value = (this.currentResult * this.value) / 100;
+    else if(this.operator === 'percent') this.result.value = parseFloat(((this.currentResult * this.value) / 100).toPrecision(14));
 
     else {
 
