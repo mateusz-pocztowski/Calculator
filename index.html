@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet"> 
+  <title>Calculator</title>
+</head>
+<body>
+<div class="wrapper">
+  <div class="calculator">
+    <div class="calculator__result">
+      <input type="text" class="calculator__result-secondary" disabled>
+      <input type="text" class="calculator__result-primary" value="0" readonly>
+    </div>
+    <div class="calculator__mem-buttons">
+      <button class="calculator__m-btn" disabled>MC</button>
+      <button class="calculator__m-btn" disabled>MR</button>
+      <button class="calculator__m-btn" disabled>M+</button>
+      <button class="calculator__m-btn" disabled>M-</button>
+      <button class="calculator__m-btn" disabled>MS</button>
+      <button class="calculator__m-btn" disabled>M</button>
+    </div>
+    <div class="calculator__buttons">
+      <button class="calculator__btn" data-operator="percent" disabled>%</button>
+      <button class="calculator__btn" data-option="clearEntry">CE</button>
+      <button class="calculator__btn" data-option="clear">C</button>
+      <button class="calculator__btn calculator__btn--backspace" data-option="undo"></button>
+      
+      <button class="calculator__btn" data-operator="fraction">&sup1;/ ₓ</button>
+      <button class="calculator__btn" data-operator="pow">x&sup2;</button>
+      <button class="calculator__btn" data-operator="sqrt">&radic;</button>
+      <button class="calculator__btn" data-operator="divide">&divide;</button>
+
+      <button class="calculator__btn calculator__btn--number" data-number>7</button>
+      <button class="calculator__btn calculator__btn--number" data-number>8</button>
+      <button class="calculator__btn calculator__btn--number" data-number>9</button>
+      <button class="calculator__btn" data-operator="multiply">&times;</button>
+      
+      <button class="calculator__btn calculator__btn--number" data-number>4</button>
+      <button class="calculator__btn calculator__btn--number" data-number>5</button>
+      <button class="calculator__btn calculator__btn--number" data-number>6</button>
+      <button class="calculator__btn" data-operator="minus">&minus;</button>
+
+      <button class="calculator__btn calculator__btn--number" data-number>1</button>
+      <button class="calculator__btn calculator__btn--number" data-number>2</button>
+      <button class="calculator__btn calculator__btn--number" data-number>3</button>
+      <button class="calculator__btn" data-operator="plus">+</button>
+
+      <button class="calculator__btn calculator__btn--number" data-option="reverse">+/-</button>
+      <button class="calculator__btn calculator__btn--number" data-number>0</button>
+      <button class="calculator__btn calculator__btn--number" data-option="dot">,</button>
+      <button class="calculator__btn calculator__btn--equals" data-operator="equal">=</button>
+    </div>
+  </div>
+</div>
+<script src="js/main.js"></script>
+<script src="js/Calculator.js"></script>
+<script src="js/Calculations.js"></script>
+</body>
+</html>
