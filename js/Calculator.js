@@ -65,17 +65,17 @@ class Calculator {
     this.subRes.style.visibility = 'visible';
 
     if(this.operator === 'pow') {
-      this.subRes.value += ` sqr(${this.result.value})`;
+      this.subRes.value = ` sqr(${this.result.value})`;
       this.result.value = Math.pow(this.result.value, 2);
     }
 
     else if(this.operator === 'sqrt') {
-      this.subRes.value += ` ${e.target.textContent}(${this.result.value})`;
+      this.subRes.value = ` ${e.target.textContent}(${this.result.value})`;
       this.result.value = Math.sqrt(this.result.value);
     }
 
     else if(this.operator === 'fraction') {
-      this.subRes.value += ` 1/(${this.result.value})`;
+      this.subRes.value = ` 1/(${this.result.value})`;
       this.result.value = 1 / this.result.value;
     }
 
